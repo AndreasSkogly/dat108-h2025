@@ -9,7 +9,7 @@ public class Eks2countmatch {
 		//Alle forbokstavene i fornavnene i en streng "CLTCM" - reduce()
         String forbokstaver = people.stream()
                 .map(p -> p.firstName())
-                .map(navn -> navn.subString(0, 1))
+                .map(navn -> navn.substring(0, 1))
 
 		
 		//Antall personer over 50 år - count()
