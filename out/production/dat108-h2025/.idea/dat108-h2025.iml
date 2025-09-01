@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/f01-interface-klasse-objekt-losning" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/f02-sortering-utplukk-fyllinn" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/f02-sortering-utplukk-losning" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/f03-recapf02-people-fyllinn" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/f03-recapf02-people-losning" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/f04-metoderefs-streams-fyllinn" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/f04-metoderefs-streams-losning" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/f05-streams2-fyllinn" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/oppgaver-uke34-123-losning" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/oppgaver-uke34-456-losning" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
