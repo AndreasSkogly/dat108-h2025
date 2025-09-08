@@ -21,12 +21,34 @@ public class Eks6utviklere {
 
 		System.out.println(
 				"\nEn oversikt over hvilke utviklere som kan Java:");
+		utviklere.stream()
+		.filter(u -> u.spraak().contains("Java"))
+		.forEach(System.out::println);
+		
+		
 		
 		System.out.println(
 				"\nNavnet på en utvikler som kan C#, eller \"INGEN\" om ingen kan C#:");
+		
+		String enSomKanCSharp = utviklere.stream()
+		.filter(u -> u.spraak().contains("C#"))
+		.map(u -> u.navn())
+		.findAny()
+		.orElse("INGEN");
+		System.out.println(enSomKanCSharp);
+		
 
 		System.out.println(
 				"\nEn sortert liste over alle programmeringsspråkene utviklerne kan:");
+		
+		List<String> sprak = utviklere.stream()
+		.map(u -> u.spraak())
+		.flatMap(s -> s.stream())
+		.distinct()
+		.sorted()
+		.toList();
+		
+		System.out.println(sprak);
 		
 		System.out.println(
 				"\nHvilket språk flest utviklere kan (finner ett av dem):");

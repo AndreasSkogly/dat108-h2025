@@ -21,12 +21,24 @@ public class _OppretteTraaderMain {
 
 		// #2
 		// Thread t2 = 
+		Thread t2 = new Thread();
+		
 
 		// #3
 		// Thread t3 = 
+		Thread t3 = new Thread(new MinRunnable());
+		t3.start();
 
 		// #4
 		// Thread t4 = 
+		Thread t4 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				System.out.println("Hallo fra anonym Runnable");
+				
+			}
+			
+		}
 
 		// #5
 		// Thread t5 = 

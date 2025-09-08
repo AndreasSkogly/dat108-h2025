@@ -1,4 +1,4 @@
-package no.hvl.dat108.f04;
+package src.no.hvl.dat108.f04;
 
 import static java.util.Comparator.comparing;
 import static no.hvl.dat108.f04.People.people;
@@ -40,9 +40,9 @@ public class Eksempel3 {
 	 * Vår egen utgave av Comparator.comparing(...).
 	 * Sjekk gjerne ut API-doc til Comparator.comparing(), og se om det ligner.
 	 */
-	static ??? vedAaSammenligne(???) {
-		return ???;
-	}
+	//static ??? vedAaSammenligne(???) {
+	//	return ???;
+	//}
 
 }
 
