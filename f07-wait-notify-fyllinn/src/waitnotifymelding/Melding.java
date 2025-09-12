@@ -15,7 +15,6 @@ public class Melding {
 		return tekst;
 }
 	public synchronized void setTekst(String tekst) {
-		
 		this.tekst = tekst;
 		notifyAll();
 		}
