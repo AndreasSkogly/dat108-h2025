@@ -50,13 +50,6 @@ public class Ball extends JPanel {
 			 */
 			
 			// Fyll inn her !!!
-			synchronized(tegneflaten) {
-				try {
-					tegneflaten.notifyAll();
-					tegneflaten.wait();  
-				} catch (InterruptedException e) {
-				}
-		}
 			
 			fart *= -1; //Skifter retning før vi begynner å løpe igjen					
 		}

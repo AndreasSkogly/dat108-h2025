@@ -13,7 +13,7 @@ import java.util.Random;
 import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
-public class Ball extends JPanel implements Runnable {
+public class Ball extends JPanel {
 
 	Color color;
 	private int vx;
@@ -74,10 +74,5 @@ public class Ball extends JPanel implements Runnable {
 
 	private int randomVxVy() {
 		return (int) Math.round((Math.random() * MAX_VX_VY));
-	}
-
-	@Override
-	public void run() {
-		animate();
 	}
 }

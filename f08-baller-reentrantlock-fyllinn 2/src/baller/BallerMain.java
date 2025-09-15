@@ -14,15 +14,11 @@ public class BallerMain {
 		
 		//Her oppretter vi et ball-objekt med gitt farge
 		Ball roedBall = new Ball(Color.RED);
-		Ball bloBall = new Ball (Color.blue);
-		Ball gronnBall = new Ball (Color.green);
 		
 		//Her oppretter vi en tegneflate og legger til ballobjektet
 		JPanel tegneflate = new JPanel();
 		tegneflate.setLayout(null);
 		tegneflate.add(roedBall);
-		tegneflate.add(bloBall);
-		tegneflate.add(gronnBall);
 		
 		//Her oppretter vi selve 2D-grafikk-vinduet legger til tegneflaten
 		JFrame grafikkvinduet = new JFrame();
@@ -36,7 +32,7 @@ public class BallerMain {
 		//på nytt i evig løkke.
 		grafikkvinduet.setVisible(true);
 		
-		
+		roedBall.animate();
 		
 		/*
 		 * Oppgave:
@@ -46,13 +42,6 @@ public class BallerMain {
 		 * Hvordan løser vi det?
 		 */
 		
-		Thread rt = new Thread(roedBall);
-		rt.start();
-		Thread rtg = new Thread(gronnBall);
-		// Thread(() -> gronBall.animate()); Lambda uttrykk
-		rtg.start();
-		Thread rtb = new Thread(bloBall);
-		rtb.start();
 	}
 
 }
