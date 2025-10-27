@@ -12,7 +12,7 @@ public class MeldingsboksTraad extends Thread {
 
 	@Override
 	public void run() {
-		JOptionPane.showMessageDialog(null, "Trykk OK for å avbryte utskriftstråden", 
+		JOptionPane.showInputDialog(null, "Trykk OK for å avbryte utskriftstråden", 
 				"Avbryt", JOptionPane.PLAIN_MESSAGE);
 		printLoop.stopp();
 	}

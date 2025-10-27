@@ -11,7 +11,7 @@ public class UtskriftsloopTraad extends Thread {
 	@Override
 	public void run() {
 		while (fortsette) {
-			System.out.println("Dette er en gjentagende melding !! :)");
+			System.out.println();
 			try {
 				sleep(2000);
 			} catch (InterruptedException e) {
